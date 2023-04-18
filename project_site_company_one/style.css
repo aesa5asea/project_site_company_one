@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: #d6d6d6;
+}
+
+/* Set the size of the image slider element */
+.image-slider {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Set the position and animation of the images */
+.image-slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Set the animation of the active image */
+.image-slider img.active {
+  opacity: 1;
+}
+
+/* Set the animation and style of the pagination */
+.image-slider .pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-slider .pagination button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.image-slider .pagination button.active {
+  background-color: #333;
+}
+
+
+/* nav bar */
+
+.boxNav{
+  position: sticky;
+  text-align: center;
+  top: 0;
+  background-color: #333;
+  padding: 8px;
+  z-index: 0;
+}
+
+
+  .sticky-nav {
+    position: sticky;
+    text-align: center;
+    top: 0;
+    background-color: #333;
+    padding: 8px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sticky-nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+  }
+  .sticky-nav li {
+    margin-right: 2px;
+  }
+  .sticky-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 9px;
+  }
+  
+  .sticky-nav li a:hover {
+    background-color: rgb(232, 78, 54);
+    border-radius: 30%;
+  }
+
+  .logo {
+    width: 300px;
+    border-radius: 30%;
+  }
+
+/*****main*****/
+.columnMain {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: auto;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.columnMain p {
+  padding: 10px;
+
+
+}
+
+/* Content */
+.content {
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin: 15px;
+  overflow: hidden;
+}
+
+.content p {
+  text-align: left;
+  font-size: large;
+}
+
+.content:hover {
+  color: #fff;
+  background-color:  #333333af ;
+}
+
+.content img {
+  width: 100%;
+  
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+  /****** footer ******/
+
+.footerContainer {
+  position: relative;
+  width: 100%;
+  bottom: 0%;
+}
+
+footer {
+  position: absolute;
+  width: 99.6%;
+  bottom: 0%;
+  padding: 3px;
+  margin-top: 3px;
+  
+  /*design*/
+  text-align: center;
+  background-color: #333;
+  color: #b3b3b3;
+}
